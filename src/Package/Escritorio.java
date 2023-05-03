@@ -43,7 +43,7 @@ public class Escritorio extends Mueble{
                 "ancho=" + ancho +
                 ", alto=" + alto +
                 "} ";
-    }                                ///Inciso 3
+    }                                ///Inciso 2
 
     @Override
     public void Aumento() {

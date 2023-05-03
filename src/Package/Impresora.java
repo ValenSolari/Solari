@@ -28,7 +28,7 @@ public class Impresora extends Informatica implements Idescuento{
 
     ///region Metodos
     @Override
-    public String toString() {                      ///Inciso 3
+    public String toString() {                      ///Inciso 2
         return super.toString() +"Impresora{" +
                 "impresionXMinnuto=" + impresionXMinnuto +
                 "} ";

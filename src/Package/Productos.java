@@ -50,7 +50,7 @@ public abstract class Productos {
 
     ///region Metodos
     @Override
-    public String toString() {                          ///Inciso 3
+    public String toString() {                          ///Inciso 2
         return "Productos{" +
                 "nombre='" + nombre + '\'' +
                 ", stock=" + stock +

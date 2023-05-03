@@ -20,7 +20,7 @@ public class Mueble extends Productos{
 
     ///region Metodos
     @Override
-    public String toString() {                          ///Inciso 3
+    public String toString() {                          ///Inciso 2
         return super.toString()+"Mueble{ ";
     }
 

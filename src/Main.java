@@ -21,19 +21,23 @@ public class Main {
         Inventario.add(i);
         Inventario.add(n);
 
+        System.out.println("\n\nListado de productos:");
         System.out.println(MostrarArrayList(Inventario));/// Inciso 3
 
+        System.out.println("\n\nPrecios especiales para clientes:");
         int precioFinalSilla = s.precioFinal(10);    ///Inciso 4
         int preciofFinalImpresora = i.precioFinal(5);///Inciso 4
 
-        System.out.println("---------------------------------Aumento de precios---------------------------------");
+        System.out.println("\n\n---------------------------------Aumento de precios---------------------------------");
         aumentarPrecios(Inventario);///Inciso 5
+
+        System.out.println("\n\nListado de productos:(Nuevos precios)");
         System.out.println(MostrarArrayList(Inventario));
 
 
 
     }
-    public static String MostrarArrayList (List<Productos> inventario){
+    public static String MostrarArrayList (List<Productos> inventario){ ///Inciso 3
         String aux = "";
         for (Productos producto:inventario){
             aux += producto.toString()+"\n";

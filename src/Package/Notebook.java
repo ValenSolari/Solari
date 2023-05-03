@@ -29,7 +29,7 @@ public class Notebook extends Informatica{
 
     ///region Metodos
     @Override
-    public String toString() {                              ///Inciso 3
+    public String toString() {                              ///Inciso 2
         return  super.toString() +"Notebook{" +
                 "memoria=" + memoria +
                 "GB } ";
