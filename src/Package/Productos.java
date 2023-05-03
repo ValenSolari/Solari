@@ -1,6 +1,6 @@
 package Package;
 
-public class Productos {
+public abstract class Productos {
     
     private String nombre;
     private int stock;
@@ -50,13 +50,15 @@ public class Productos {
 
     ///region Metodos
     @Override
-    public String toString() {
+    public String toString() {                          ///Inciso 3
         return "Productos{" +
                 "nombre='" + nombre + '\'' +
                 ", stock=" + stock +
                 ", precio=" + precio +
                 '}';
     }
+
+    public abstract void Aumento ();                   ///Inciso 5
 
     ///endregion
 }

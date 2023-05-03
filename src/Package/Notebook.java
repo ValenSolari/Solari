@@ -29,10 +29,19 @@ public class Notebook extends Informatica{
 
     ///region Metodos
     @Override
-    public String toString() {
-        return "Notebook{" +
+    public String toString() {                              ///Inciso 3
+        return  super.toString() +"Notebook{" +
                 "memoria=" + memoria +
-                "GB } " + super.toString();
+                "GB } ";
+    }
+    @Override
+    public void Aumento() {                                 ///Inciso 5
+        System.out.println(toString());
+        System.out.println("Precio anterior= "+getPrecio());
+        int aux;
+        aux = getPrecio()+((getPrecio()*20)/100);
+        setPrecio(aux);
+        System.out.println("Precio anterior= "+getPrecio());
     }
 
     ///endregion

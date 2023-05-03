@@ -39,12 +39,21 @@ public class Escritorio extends Mueble{
     ///region Metodos
     @Override
     public String toString() {
-        return "Escritorio{" +
+        return super.toString()+"Escritorio{" +
                 "ancho=" + ancho +
                 ", alto=" + alto +
-                "} " + super.toString();
-    }
+                "} ";
+    }                                ///Inciso 3
 
+    @Override
+    public void Aumento() {
+        System.out.println(toString());
+        System.out.println("Precio anterior= "+getPrecio());
+        int aux;
+        aux = getPrecio()+((getPrecio()*10)/100);
+        setPrecio(aux);
+        System.out.println("Precio anterior= "+getPrecio());
+    }                                    ///Inciso 5
 
     ///endregion
 }

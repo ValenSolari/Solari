@@ -30,11 +30,14 @@ public class Informatica extends Productos{
 
     ///region Metodos
     @Override
-    public String toString() {
-        return "Informatica{" +
+    public String toString() {                      ///Inciso 3
+        return super.toString()+"Informatica{" +
                 "fabricante='" + fabricante + '\'' +
-                "} " + super.toString();
+                "} " ;
     }
+
+    @Override
+    public void Aumento(){}                             ///Inciso 5
 
 
     ///endregion
